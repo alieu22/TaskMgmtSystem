@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('web.LandingPage'); // Defines a route for the root URL that renders the 'LandingPage' view
 });
+
+Auth::routes();
+Route::get('/LandingPage', function () {  // Define a route for the 'LandingPage' URL, giving it the name 'LandingPage'
+    return view('web.LandingPage');
+})->name('LandingPage');
+
