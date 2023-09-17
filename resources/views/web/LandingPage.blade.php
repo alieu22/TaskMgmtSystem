@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to the task Management app</title>
+    <title>Mindsight Task Mgmt</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -52,7 +52,7 @@
 </head>
 <body class="antialiased">
     <div class="container">
-        <h1 class="title">Welcome to the task Management app</h1>
+        <h1 class="title">Welcome to the Mindsight Mentors <br> task Management system</h1>
         <div class="links">
         @auth
     <!-- User is authenticated, display "Home" link, which would be the landing page to the actual task management system once they get in, the name needs to be changed -->

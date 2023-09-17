@@ -1,5 +1,5 @@
 @extends('layouts.app')
-<!-- this page name should be changed, it should become a page that the app routes to once the person is able to log in -->
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

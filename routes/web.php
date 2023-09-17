@@ -12,13 +12,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Auth::routes();
 Route::get('/', function () {
     return view('web.LandingPage'); // Defines a route for the root URL that renders the 'LandingPage' view
 });
 
-Auth::routes();
+
 Route::get('/LandingPage', function () {  // Define a route for the 'LandingPage' URL, giving it the name 'LandingPage'
     return view('web.LandingPage');
 })->name('LandingPage');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
