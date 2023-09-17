@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<!-- this page will be the home dashboard for the system, where the development will start -->
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
