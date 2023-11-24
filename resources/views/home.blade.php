@@ -20,10 +20,11 @@
                             width: 200px; /* Set your desired width */
                             height: 400px; /* Set your desired height */
                             }
+
+                        
                         </style>
 
-
-                    {{ __('You are logged in!') }}
+            <p>  You are logged in! </p>
                 </div>
             </div>
         </div>

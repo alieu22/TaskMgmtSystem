@@ -1,5 +1,8 @@
 <?php
+/* 
+this page focuses on the fields for a user when they are logging in
 
+*/
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
