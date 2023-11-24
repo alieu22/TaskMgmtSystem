@@ -10,12 +10,15 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-
     {
-        // here we will be creating the columns in the filtercriteria table
+        // builds the filter criteria table
         Schema::create('filter_criteria', function (Blueprint $table) {
-            $table->id();
+            $table->id(); // primary key ID 
             $table->timestamps();
+            $table->unsignedBigInteger('userID'); // will act as the foreign key to refer to the userID in the users table
+            $table->string('criteria_Name');
+            $table->string('description')->nullable();  // specifies to the user what the filter criterion they chose does
+            $table->foreign('userID')->references('id')->on('users');
         });
     }
 
